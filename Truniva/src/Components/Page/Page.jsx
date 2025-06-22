@@ -53,7 +53,7 @@ const Page = () => {
     }
     setFormStatus('Sending...');
     try {
-      const response = await fetch('http://localhost:5000/contact', {
+      const response = await fetch('https://trunivatech-production.up.railway.app/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
